@@ -10,12 +10,16 @@
 		"preview": "vite preview",
 		"prepare": "husky"
 	},
-  "lint-staged": {
-    "*.{ts,tsx}": ["biome check --write"]
-  },
+	"lint-staged": {
+		"*.{ts,tsx}": [
+			"biome check --write"
+		]
+	},
 	"dependencies": {
+		"@tailwindcss/vite": "^4.1.7",
 		"react": "^19.1.0",
-		"react-dom": "^19.1.0"
+		"react-dom": "^19.1.0",
+		"tailwindcss": "^4.1.7"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
