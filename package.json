@@ -13,9 +13,8 @@
     "build-storybook": "storybook build"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
-      "biome check --write --no-errors-on-unmatched"
-    ]
+    "*.{ts,tsx}": ["biome check --write --no-errors-on-unmatched"],
+    "!*.config.ts": ["biome check --write --no-errors-on-unmatched"]
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.7",
