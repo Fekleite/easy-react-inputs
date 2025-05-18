@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "prepare": "husky",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "test": "vitest"
   },
   "lint-staged": {
     "*.{ts,tsx}": ["biome check --write --no-errors-on-unmatched"],
@@ -33,13 +34,20 @@
     "@storybook/react": "8.6.14",
     "@storybook/react-vite": "8.6.14",
     "@storybook/test": "8.6.14",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.18",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react-swc": "^3.9.0",
+    "happy-dom": "^17.4.7",
     "husky": "^9.1.7",
     "lint-staged": "^16.0.0",
     "storybook": "8.6.14",
     "typescript": "~5.8.3",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.1.3"
   }
 }
