@@ -15,6 +15,7 @@ type Story = StoryObj<typeof TextInput>;
 export const Default: Story = {
   args: {
     placeholder: "Your name",
+    type: "text",
   },
 };
 
@@ -22,12 +23,14 @@ export const Disabled: Story = {
   args: {
     disabled: true,
     placeholder: "Your name",
+    type: "text",
   },
 };
 
 export const Focused: Story = {
   args: {
     placeholder: "Your name",
+    type: "text",
   },
   play: async ({ canvasElement }) => {
     const input = canvasElement.querySelector("input");
@@ -42,6 +45,7 @@ export const WithError: Story = {
   args: {
     error: true,
     placeholder: "Your name",
+    type: "text",
   },
 };
 
@@ -49,6 +53,7 @@ export const Successful: Story = {
   args: {
     success: true,
     placeholder: "Your name",
+    type: "text",
   },
 };
 

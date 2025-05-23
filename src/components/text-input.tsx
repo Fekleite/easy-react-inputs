@@ -6,6 +6,7 @@ interface ITextInputProps extends React.ComponentProps<"input"> {
   error?: boolean;
   success?: boolean;
   withIcon?: boolean;
+  type: "text" | "email" | "password" | "tel" | "url" | "search";
 }
 
 export function TextInput({
@@ -30,7 +31,7 @@ export function TextInput({
       ])}
       data-testid="text-input-container"
     >
-      <BaseInput {...props} type="text" id={inputId} />
+      <BaseInput {...props} id={inputId} />
 
       {withIcon && Icon && (
         <Icon
