@@ -28,6 +28,7 @@ export function TextInput({
         props.disabled && "border-2 border-gray-300",
         props.className,
       ])}
+      data-testid="text-input-container"
     >
       <BaseInput {...props} type="text" id={inputId} />
 
@@ -37,6 +38,7 @@ export function TextInput({
             "size-5 text-gray-500",
             props.disabled && "text-gray-300",
           ])}
+          data-testid="text-input-icon"
         />
       )}
     </div>
