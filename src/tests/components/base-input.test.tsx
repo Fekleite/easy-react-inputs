@@ -18,7 +18,7 @@ describe("BaseInput", () => {
     render(<BaseInput />);
 
     expect(screen.getByTestId("easy-base-input")).toHaveClass(
-      "text-gray-700 text-sm outline-none placeholder:text-gray-400 disabled:bg-gray-200",
+      "w-full text-gray-700 text-sm outline-none placeholder:text-gray-400 disabled:placeholder:text-gray-300",
     );
   });
 
@@ -26,7 +26,7 @@ describe("BaseInput", () => {
     render(<BaseInput className="w-32" />);
 
     expect(screen.getByTestId("easy-base-input")).toHaveClass(
-      "text-gray-700 text-sm outline-none placeholder:text-gray-400 disabled:bg-gray-200 w-32",
+      "text-gray-700 text-sm outline-none placeholder:text-gray-400 disabled:placeholder:text-gray-300 w-32",
     );
   });
 });
